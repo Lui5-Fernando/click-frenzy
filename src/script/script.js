@@ -9,6 +9,7 @@ var pontosnumero = document.querySelector("#pontos-numero")
 var telafinal = document.querySelector("#tela-final")
 var jogo = document.querySelector("#jogo")
 var pontosnumeroevenviar = document.querySelector("#pontos-numero-evenviar")
+var pontosh6 = document.querySelector("#pontos-h6")
 
 
 
@@ -80,6 +81,5 @@ function posicaoAleatoria() {
 function tempoAcabou() {
     telafinal.style.display = "block"
     pontosnumeroevenviar.value = pontocontador
+    pontosh6.innerHTML = `Você fez ${pontocontador} pontos`
 }
-
-

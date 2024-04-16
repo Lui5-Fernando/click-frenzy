@@ -37,10 +37,12 @@ function tablaPontos(){
     
     $sql = "SELECT * FROM playerinfos ORDER BY pontos DESC LIMIT 5";
     $result = mysqli_query($conn, $sql);
-    
+    $cont = 0;
+
     if ($result) {
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "Nome: " . $row['nome'] . ", Pontos: " . $row['pontos'] . "<br>";
+            $cont = $cont + 1;
+            echo $cont . "º " . $row['nome'] . ", Pontos: " . $row['pontos'] . "<br>";
         }
     }
     

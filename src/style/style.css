@@ -1,5 +1,35 @@
-#telainicial{
+@font-face {
+    font-family: 'Crang';
+    src: url('../fonts/Crang.ttf') format('truetype');
+}
+
+*{
+    font-family: 'Crang', sans-serif;
+    font-size: x-large;
+}
+
+main{
     display: flex;
     justify-content: center;
-    margin-top: 45vh;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+    background-color: #325bff33;
+}
+
+h1{
+    color: #000000;
+}
+
+#telainicial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+}
+
+#playbtn{
+    font-size: x-large;
+    color: #ffffff;
 }
